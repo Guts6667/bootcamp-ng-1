@@ -1,10 +1,18 @@
 import { Component } from '@angular/core';
-
+import { UserService } from './service/user/user.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'bootcamp-ng-1';
+  title: string = 'Bootcamp angular';
+  courseStatus: boolean | string = '';
+  users: string[] = [];
+  constructor(public userService: UserService) {}
+
+  toggleCourseStatus(value: boolean) {
+    this.courseStatus = value;
+    console.log(this.courseStatus);
+  }
 }

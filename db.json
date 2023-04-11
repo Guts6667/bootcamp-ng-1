@@ -1,0 +1,35 @@
+{
+	"formations" : [
+		{
+			"id" : 123,
+			"titre" : "Une super formation Angular",
+			"online" : true
+		},
+		{
+			"id" : 248,
+			"titre" : "Une formation Angular un peu moins bonne",
+			"online" : true
+		},
+		{
+			"id" : 786,
+			"titre" : "Une formation React, mais c\"est pas aussi bien que Angular",
+			"online" : false
+		}
+	],
+	"users" : [
+    {
+      "id" : 1,
+      "username" : "John Doe",
+      "password" : "test1234",
+      "email" : "john@doe.com",
+      "formations" : [248]
+    },
+    {
+      "id" : 2,
+      "username" : "Donald Trump",
+      "password" : "test1234",
+      "email" : "donald@trump.com",
+      "formations" : [123,248]
+    }
+  ]
+}

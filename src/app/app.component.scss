@@ -1,0 +1,38 @@
+.container{
+    &__home{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+
+        button{
+            border: none;
+            background: paleturquoise;
+            color: white;
+            text-align: center;
+            padding: 5px 15px;
+            margin: 0 15px;
+            box-shadow: 1px 2px 4px 2px #b6b5b557;
+            border-radius: 25px;
+            cursor: pointer;
+            &:hover{
+                background-color: palegreen;
+                transition: ease-in-out .26s;
+                box-shadow: 1px 2px 4px 3px rgb(182 181 181 / 58%);;
+            }
+        }
+        
+    }
+    table{
+        .btn{
+            cursor: pointer;
+            &-delete{
+                background-color: palevioletred;
+            }
+            &-edit{
+                background-color: peru;
+            }
+        }
+
+    }
+}
