@@ -9,18 +9,10 @@
     <span *ngIf="courseStatus">Let's start</span>
     <span *ngIf="courseStatus === false">Ok then...</span>
   </div>
+  <ul>
+    <!-- Insert code here -->
+  </ul>
 </div>
 
-<table>
-  <thead>
-    <th>Name</th>
-    <tr *ngFor="let user of userService.users; let i = index">
-      <td>{{user}}</td>
-      <td class="btn btn-edit" (click)="userService.editUser(i,'Rayan')">Edit</td>
-      <td class="btn btn-delete" (click)="userService.removeUser(i)">Delete</td>
-    </tr>
-  </thead>
-
-</table>
 
 <router-outlet></router-outlet>
